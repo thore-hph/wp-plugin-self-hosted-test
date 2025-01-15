@@ -38,7 +38,7 @@ $updater->set_hooks();
 function wp_plugin_self_hosted_test_admin_notice() {
     ?>
     <div class="notice notice-success is-dismissible">
-        <p><?php _e( 'Hello World! Does this work?' . var_dump(plugin_dir_path( __FILE__ ) . 'plugin-updater/class-updater-checker.php'), 'wp-plugin-self-hosted-test' ); ?></p>
+        <p><?php _e( 'Hello World! Does this work?', 'wp-plugin-self-hosted-test' ); ?></p>
     </div>
     <?php
 }
