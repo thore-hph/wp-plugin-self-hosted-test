@@ -18,6 +18,6 @@ jobs:
           ref: main
 
       - name: Run WP Self-Host Update JSON Generator
-        uses: thore-hph/wp-plugin-self-hosted-test@main
+        uses: eduardovillao/wp-self-host-updater-generator@main
         with:
           github-token: ${{ secrets.SECRET_TOKEN }}
