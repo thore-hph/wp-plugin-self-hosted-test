@@ -17,7 +17,8 @@ define( 'WP_PLUGIN_SELF_HOSTED_TEST_BASENAME', plugin_basename( __FILE__ ) );
 // Plugin Updater
 require_once __DIR__ . '/plugin-updater/class-updater-checker.php'; // Use your path to file
 
-use Use\Your\Namespace\Updater_Checker; // Use your namespace
+// Use your namespace
+use HomepageHelden\Updater_Checker;
 
 $github_username = 'thore-hph';
 $github_repository = 'wp-plugin-self-hosted-test';

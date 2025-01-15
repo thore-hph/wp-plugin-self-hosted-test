@@ -1,6 +1,6 @@
 <?php
 
-namespace Use\Your\Namespace; // Change this to use your namespace
+namespace HomepageHelden\Updater_Checker; // Change this to use your namespace
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
