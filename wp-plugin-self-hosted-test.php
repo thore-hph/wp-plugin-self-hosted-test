@@ -3,7 +3,7 @@
  * Plugin Name: WP Plugin Self Hosted Test
  * Plugin URI: https://github.com/thore-hph/wp-plugin-self-hosted-test
  * Description: Test plugin for self hosted WordPress plugins
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Thore Janke (thore@homepage-helden.de)
  */
 
@@ -22,7 +22,7 @@ use Use\Your\Namespace\Updater_Checker; // Use your namespace
 $github_username = 'thore-hph';
 $github_repository = 'wp-plugin-self-hosted-test';
 $plugin_basename = WP_PLUGIN_SELF_HOSTED_TEST_BASENAME;
-$plugin_current_version = '1.0.0';
+$plugin_current_version = '1.0.1';
 
 $updater = new Updater_Checker(
     $github_username,
@@ -36,7 +36,7 @@ $updater->set_hooks();
 function wp_plugin_self_hosted_test_admin_notice() {
     ?>
     <div class="notice notice-success is-dismissible">
-        <p><?php _e( 'Hello World!', 'wp-plugin-self-hosted-test' ); ?></p>
+        <p><?php _e( 'Hello World! Does this work?', 'wp-plugin-self-hosted-test' ); ?></p>
     </div>
     <?php
 }
