@@ -1,0 +1,17 @@
+{
+  "name": "WP Plugin Self Hosted Test",
+  "slug": "1.0.3",
+  "author": "homepagehelden",
+  "author_profile": "",
+  "version": "1.0.3",
+  "download_url": "https://github.com/thore-hph/wp-plugin-self-hosted-test/releases/download/1.0.3/wp-plugin-self-hosted-test-1.0.3.zip",
+  "requires": "4.7",
+  "tested": "6.7.1",
+  "requires_php": "7.0",
+  "last_updated": "2025-01-15T12:12:12.436Z",
+  "sections": {
+    "description": "",
+    "installation": "",
+    "changelog": []
+  }
+}
