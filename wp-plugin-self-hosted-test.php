@@ -15,7 +15,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 define( 'WP_PLUGIN_SELF_HOSTED_TEST_BASENAME', plugin_basename( __FILE__ ) );
 
 // Plugin Updater
-require_once __DIR__ . '/plugin-updater/class-updater-checker.php'; // Use your path to file
+// Use your path to file
+require_once plugin_dir_path( __FILE__ ) . 'plugin-updater/class-updater-checker.php';
 
 // Use your namespace
 use HomepageHelden\Updater_Checker;
@@ -37,7 +38,7 @@ $updater->set_hooks();
 function wp_plugin_self_hosted_test_admin_notice() {
     ?>
     <div class="notice notice-success is-dismissible">
-        <p><?php _e( 'Hello World! Does this work?', 'wp-plugin-self-hosted-test' ); ?></p>
+        <p><?php _e( 'Hello World! Does this work?' . var_dump(plugin_dir_path( __FILE__ ) . 'plugin-updater/class-updater-checker.php'), 'wp-plugin-self-hosted-test' ); ?></p>
     </div>
     <?php
 }
